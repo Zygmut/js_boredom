@@ -1,0 +1,8 @@
+{
+	"bitcoin": "BTC",
+	"dogecoin": "DOGE",
+	"ethereum": "ETH",
+	"cardano": "ADA",
+	"tether": "USDT",
+	"solana": "SOL"
+}

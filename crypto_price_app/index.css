@@ -1,0 +1,47 @@
+:root {
+    --black: #161616;
+    --black-alt: #212227;
+    --green: #bfff7f;
+    --yellow: #ffdf7f;
+    --red: #ff7f7f;
+    --text-color: #cccccc;
+}
+
+body {
+    background-color: var(--black);
+}
+
+body * {
+    color: var(--text-color);
+}
+
+.coin-icon {
+    width: 4rem;
+    aspect-ratio: 1/1;
+}
+
+.list-group-item {
+    background-color: var(--black-alt);
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.rising {
+    background: linear-gradient(135deg, var(--black-alt) 40%, color-mix(in srgb, var(--black-alt), var(--green)));
+}
+
+.rising .coin-price .price {
+    color: var(--green);
+}
+
+.falling {
+    color: var(--red);
+    background: linear-gradient(135deg, var(--black-alt) 40%, color-mix(in srgb, var(--black-alt), var(--red)));
+}
+
+.falling .coin-price .price {
+    color: var(--red);
+}
