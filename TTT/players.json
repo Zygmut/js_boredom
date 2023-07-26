@@ -1,0 +1,14 @@
+[
+	{
+		"mark": "X",
+		"color": "#5cc9ff"
+	},
+	{
+		"mark": "O",
+		"color": "#ff7f7f"
+	},
+	{
+		"mark": "T",
+		"color": "#ffdf7f"
+	}
+]

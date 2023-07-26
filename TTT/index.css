@@ -1,0 +1,42 @@
+:root {
+    --black: #161616;
+    --black-alt: #212227;
+    --green: #bfff7f;
+    --yellow: #ffdf7f;
+    --red: #ff7f7f;
+    --blue: #5cc9ff;
+    --text-color: #cccccc;
+    --highlight-bg: var(--blue)
+}
+
+body {
+    background: linear-gradient(135deg, var(--black), var(--highlight-bg));
+    transition: ease 1s;
+}
+
+body * {
+    color: var(--text-color);
+}
+
+.card {
+    aspect-ratio: 1/1;
+    text-align: center;
+}
+
+.cell {
+    background: var(--black-alt);
+    width: 100%;
+    aspect-ratio: 1/1;
+    text-align: center;
+    transition: ease 0.3s;
+    font-size: 4vw;
+}
+
+.cell:hover {
+    color: var(--black);
+    background-color: var(--text-color);
+}
+
+.modal-content {
+    background-color: var(--black-alt);
+}
