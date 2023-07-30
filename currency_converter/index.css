@@ -1,0 +1,131 @@
+:root {
+    --black: #161616;
+    --black-alt: #212227;
+    --green: #bfff7f;
+    --yellow: #ffdf7f;
+    --red: #ff7f7f;
+    --blue: #5cc9ff;
+    --purple: #e55de2;
+    --text-color: #cccccc;
+    --highlight: var(--green)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: consolas, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(var(--black-alt) 50%, var(--highlight) 50%);
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: var(--text-color);
+    border-radius: 1rem;
+    background: var(--black);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.card-header {
+    transition: all 0.3s ease;
+}
+
+.card-header:hover {
+    color: var(--highlight);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-body button {
+    width: 100%;
+    height: 2rem;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    background: var(--black-alt);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-body button:hover {
+    color: var(--black);
+    background: var(--highlight);
+}
+
+.amount input {
+    height: 2rem;
+    width: 100%;
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: var(--text-color);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.amount input:hover,
+.amount input:focus {
+    border: 1px solid var(--highlight)
+}
+
+
+.exchange {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.curr-selector {
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.curr-selector:hover,
+.curr-selector:focus {
+    border: 1px solid var(--highlight);
+}
+
+.curr-selector select {
+    height: 100%;
+    width: 100%;
+    color: var(--text-color);
+    background: none;
+    cursor: pointer;
+}
+
+.flag {
+    width: 4rem;
+}

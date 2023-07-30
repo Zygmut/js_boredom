@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="card">
+        <h1 class="card-header">Currency Converter</h1>
+        <form class="card-body">
+            <div class="amount">
+                <p>Amount</p>
+                <input id="amount" type="number" value="1" min="1" step="0.001">
+            </div>
+
+            <div class="exchange">
+                <div id="from" class="curr-selector">
+                    <img class="flag" src="https://flagcdn.com/br.svg" alt="Brazil">
+                    <select></select>
+                </div>
+
+                <i class="fas fa-arrow-right"></i>
+
+                <div id="to" class="curr-selector">
+                    <img class="flag" src="https://flagcdn.com/gr.svg" alt="Greece">
+                    <select></select>
+                </div>
+            </div>
+
+            <button id="exchange-button">Get exchange rate</button>
+        </form>
+
+        <p class="result card-footer"> Getting exchange rate ...</p>
+    </div>
+</body>
+
+</html>
