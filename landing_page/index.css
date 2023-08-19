@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+:root {
+    --dark: #33345B;
+    --light: #8C658B;
+    --accent: #D19BB9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--light);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-image: url("https://wallpapercave.com/wp/wp4758304.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+aside {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    padding: 5vw;
+    transition: all 0.3s ease;
+}
+
+/* HEADER */
+
+header,
+header>#time-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header>h2,
+header>#time-data>#time{
+    font-size: 3rem;
+}
+
+
+/* LOGIN FORM */
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+form>#user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form>#user-data>div {
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+form>button {
+    transition: all 0.3s ease;
+}
+
+form>#user-data>div:hover,
+form>#user-data>div:has(>input:focus) {
+    border: 1px solid var(--accent);
+}
+
+form>#user-data>div:hover>*,
+form>#user-data>div:has(>input:focus)>* {
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+form>#user-data>*>input {
+    width: 100%;
+    background: none;
+}
+
+form>#login {
+    color: var(--dark);
+    background: var(--light);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+form>#login:hover {
+    background: var(--accent);
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+}
+
+footer>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+footer>ul>li>button:hover>* {
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+footer>ul>li>button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+footer>ul>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>ul>li>button>i {
+    font-size: 5rem;
+}
