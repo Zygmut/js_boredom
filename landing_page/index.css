@@ -125,7 +125,6 @@ footer>ul {
     list-style: none;
 }
 
-
 footer>ul>li>button:hover>* {
     color: var(--accent);
     transition: all 0.3s ease;
@@ -137,13 +136,7 @@ footer>ul>li>button {
     cursor: pointer;
 }
 
-footer>ul>li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 footer>ul>li>button>i {
-    font-size: 5rem;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
 }
